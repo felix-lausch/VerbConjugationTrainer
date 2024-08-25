@@ -14,7 +14,6 @@ public enum TimeForm
 }
 
 public record Conjugations(
-    //TimeForm TimeForm,
     string TimeForm,
     Translation FirstPersonSingular,
     Translation SecondPersonSingular,

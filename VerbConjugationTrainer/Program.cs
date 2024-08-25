@@ -5,17 +5,28 @@ using VerbConjugationTrainer.Models;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-//var res = await ImportManager.ParseVerbAsync("hacer");
+//var imported = await ImportManager.ParseVerbAsync("querer");
+//var json = JsonSerializer.Serialize(imported);
 
-var res = JsonSerializer.Deserialize<Verb>(File.ReadAllText("source/hacer.json"));
+var fileName = AnsiConsole.Prompt(
+    new SelectionPrompt<string>()
+        .Title("Which [blue]verb[/] to you want to practice?")
+        .PageSize(10)
+        .MoreChoicesText("[grey](Move up and down to reveal more options)[/]")
+        .AddChoices(Directory.EnumerateFiles("Source/Json").Select(x => Path.GetFileName(x))));
+
+var verb = JsonSerializer.Deserialize<Verb>(File.ReadAllText($"Source/Json/{fileName}"))!;
 
 AnsiConsole.WriteLine("Please type the spanish conjugated verb.");
 
 AnsiConsole.WriteLine();
-AnsiConsole.MarkupLine($"Current Verb: [bold yellow]{res.RegularForm.Spanish} - {res.RegularForm.English}[/]");
+AnsiConsole.MarkupLine($"Current Verb: [bold yellow]{verb.RegularForm.Spanish} - {verb.RegularForm.English}[/]");
 
-foreach (var conjugation in res.Conjugations)
+foreach (var conjugation in verb.Conjugations)
 {
+    AnsiConsole.WriteLine();
+    AnsiConsole.MarkupLine($"Current Form: [bold yellow]{conjugation.TimeForm}[/]");
+
     AskQuestion(conjugation.FirstPersonSingular);
     AskQuestion(conjugation.SecondPersonSingular);
     AskQuestion(conjugation.ThirdPersonSingular);
@@ -24,63 +35,29 @@ foreach (var conjugation in res.Conjugations)
 }
 
 //var rng = new Random();
+//.OrderBy(_ => rng.Next())
 
-//TODO: correct mistake immediately -> prompt input again and re-set line
 //TODO: dont keep i,you, he, they info in the string itself. find better data structure so that the english sentence can be decided on the fly
 // e.g. that she is, if he is, that he is, etc.
 //TODO: maybe in that structure also keep the spanish word and then show it optionally (yo) soy
 
-//var verb = AnsiConsole.Prompt(
-//    new SelectionPrompt<string>()
-//        .Title("Which verb to you want to [green]practice[/]?")
-//        .PageSize(10)
-//        .MoreChoicesText("[grey](Move up and down to reveal more fruits)[/]")
-//        .AddChoices(ConjugatedVerbs.verbs.Keys.ToArray()));
-
-//foreach (var verb in ConjugatedVerbs.verbs.OrderBy(_ => rng.Next()))
-//{
-    //AnsiConsole.WriteLine();
-    //AnsiConsole.MarkupLine($"Current Verb: [bold yellow]{verb}[/]");
-
-    //foreach (var (en, esp) in ConjugatedVerbs.verbs[verb])
-    //{
-    //    var question = $"{en}: ";
-    //    var answer = AnsiConsole.Ask<string>(question);
-
-    //    var output = string.Empty;
-    //    if (answer == esp)
-    //    {
-    //        output = $"{question}{answer} ✅";
-    //    }
-    //    else
-    //    {
-    //        output = $"{question}{answer} ❌ => {esp}";
-    //    }
-
-    //    AnsiConsoleOverwriteLine(output);
-    //}
-//}
-
-
-AnsiConsole.Write("Finished everything :) press any key to exit..");
+AnsiConsole.Write("Good job :) press any key to exit..");
 Console.ReadKey();
 
 static void AskQuestion(Translation translation)
 {
     var question = $"{translation.English}: ";
+
     var answer = AnsiConsole.Ask<string>(question);
 
-    var output = string.Empty;
     if (answer == translation.Spanish)
     {
-        output = $"{question}{answer} ✅";
+        AnsiConsoleOverwriteLine($"{question}{answer} ✅");
+        return;
     }
-    else
-    {
-        output = $"{question}{answer} ❌ => {translation.Spanish}";
-    }
-
-    AnsiConsoleOverwriteLine(output);
+    
+    AnsiConsoleOverwriteLine($"{question}{answer} ❌ => {translation.Spanish}");
+    AskQuestion(translation);
 }
 
 static void AnsiConsoleOverwriteLine(string input)

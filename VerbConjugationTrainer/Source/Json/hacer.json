@@ -15,7 +15,7 @@
         "Spanish": "haces"
       },
       "ThirdPersonSingular": {
-        "English": "he/she/it does",
+        "English": "he/she does",
         "Spanish": "hace"
       },
       "FirstPersonPlural": {
@@ -28,26 +28,26 @@
       }
     },
     {
-      "TimeForm": "Indicative_Perfect",
+      "TimeForm": "Indicative_Past",
       "FirstPersonSingular": {
-        "English": "I have done",
-        "Spanish": "he hecho"
+        "English": "I did",
+        "Spanish": "hac√≠a"
       },
       "SecondPersonSingular": {
-        "English": "you have done",
-        "Spanish": "has hecho"
+        "English": "you did",
+        "Spanish": "hac√≠as"
       },
       "ThirdPersonSingular": {
-        "English": "he/she/it has done",
-        "Spanish": "ha hecho"
+        "English": "he/she did",
+        "Spanish": "hac√≠a"
       },
       "FirstPersonPlural": {
-        "English": "we have done",
-        "Spanish": "hemos hecho"
+        "English": "we did",
+        "Spanish": "hac√≠amos"
       },
       "ThirdPersonPlural": {
-        "English": "they have done",
-        "Spanish": "han hecho"
+        "English": "they did",
+        "Spanish": "hac√≠an"
       }
     },
     {
@@ -61,7 +61,7 @@
         "Spanish": "hiciste"
       },
       "ThirdPersonSingular": {
-        "English": "he/she/it did",
+        "English": "he/she did",
         "Spanish": "hizo"
       },
       "FirstPersonPlural": {
@@ -74,18 +74,41 @@
       }
     },
     {
+      "TimeForm": "Conditional_Present",
+      "FirstPersonSingular": {
+        "English": "I would do",
+        "Spanish": "har√≠a"
+      },
+      "SecondPersonSingular": {
+        "English": "you would do",
+        "Spanish": "har√≠as"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she would do",
+        "Spanish": "har√≠a"
+      },
+      "FirstPersonPlural": {
+        "English": "we would do",
+        "Spanish": "har√≠amos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they would do",
+        "Spanish": "har√≠an"
+      }
+    },
+    {
       "TimeForm": "Indicative_Future",
       "FirstPersonSingular": {
         "English": "I will do",
-        "Spanish": "harÈ"
+        "Spanish": "har√©"
       },
       "SecondPersonSingular": {
         "English": "you will do",
-        "Spanish": "har·s"
+        "Spanish": "har√°s"
       },
       "ThirdPersonSingular": {
-        "English": "he/she/it will do",
-        "Spanish": "har·"
+        "English": "he/she will do",
+        "Spanish": "har√°"
       },
       "FirstPersonPlural": {
         "English": "we will do",
@@ -93,76 +116,53 @@
       },
       "ThirdPersonPlural": {
         "English": "they will do",
-        "Spanish": "har·n"
+        "Spanish": "har√°n"
       }
     },
     {
       "TimeForm": "Subjunctive_Present",
       "FirstPersonSingular": {
-        "English": "I do",
+        "English": "that I do",
         "Spanish": "haga"
       },
       "SecondPersonSingular": {
-        "English": "you do",
+        "English": "that you do",
         "Spanish": "hagas"
       },
       "ThirdPersonSingular": {
-        "English": "he/she/it does",
+        "English": "that he/she does",
         "Spanish": "haga"
       },
       "FirstPersonPlural": {
-        "English": "we do",
+        "English": "that we do",
         "Spanish": "hagamos"
       },
       "ThirdPersonPlural": {
-        "English": "they do",
+        "English": "that they do",
         "Spanish": "hagan"
       }
     },
     {
       "TimeForm": "Subjunctive_Perfect",
       "FirstPersonSingular": {
-        "English": "I have done",
+        "English": "that I have done",
         "Spanish": "haya hecho"
       },
       "SecondPersonSingular": {
-        "English": "you have done",
+        "English": "that you have done",
         "Spanish": "hayas hecho"
       },
       "ThirdPersonSingular": {
-        "English": "he/she/it has done",
+        "English": "that he/she has done",
         "Spanish": "haya hecho"
       },
       "FirstPersonPlural": {
-        "English": "we have done",
+        "English": "that we have done",
         "Spanish": "hayamos hecho"
       },
       "ThirdPersonPlural": {
-        "English": "they have done",
+        "English": "that they have done",
         "Spanish": "hayan hecho"
-      }
-    },
-    {
-      "TimeForm": "Conditional_Present",
-      "FirstPersonSingular": {
-        "English": "I would do",
-        "Spanish": "harÌa"
-      },
-      "SecondPersonSingular": {
-        "English": "you would do",
-        "Spanish": "harÌas"
-      },
-      "ThirdPersonSingular": {
-        "English": "he/she/it would do",
-        "Spanish": "harÌa"
-      },
-      "FirstPersonPlural": {
-        "English": "we would do",
-        "Spanish": "harÌamos"
-      },
-      "ThirdPersonPlural": {
-        "English": "they would do",
-        "Spanish": "harÌan"
       }
     }
   ]

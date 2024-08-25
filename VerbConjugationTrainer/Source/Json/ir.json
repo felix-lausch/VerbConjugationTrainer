@@ -1,0 +1,170 @@
+{
+  "RegularForm": {
+    "English": "to go",
+    "Spanish": "ir"
+  },
+  "Conjugations": [
+    {
+      "TimeForm": "Indicative_Present",
+      "FirstPersonSingular": {
+        "English": "I go",
+        "Spanish": "voy"
+      },
+      "SecondPersonSingular": {
+        "English": "you go",
+        "Spanish": "vas"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she goes",
+        "Spanish": "va"
+      },
+      "FirstPersonPlural": {
+        "English": "we go",
+        "Spanish": "vamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they go",
+        "Spanish": "van"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Past",
+      "FirstPersonSingular": {
+        "English": "I went",
+        "Spanish": "iba"
+      },
+      "SecondPersonSingular": {
+        "English": "you went",
+        "Spanish": "ibas"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she went",
+        "Spanish": "iba"
+      },
+      "FirstPersonPlural": {
+        "English": "we went",
+        "Spanish": "íbamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they went",
+        "Spanish": "iban"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Preterite",
+      "FirstPersonSingular": {
+        "English": "I went",
+        "Spanish": "fui"
+      },
+      "SecondPersonSingular": {
+        "English": "you went",
+        "Spanish": "fuiste"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she went",
+        "Spanish": "fue"
+      },
+      "FirstPersonPlural": {
+        "English": "we went",
+        "Spanish": "fuimos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they went",
+        "Spanish": "fueron"
+      }
+    },
+    {
+      "TimeForm": "Conditional_Present",
+      "FirstPersonSingular": {
+        "English": "I would go",
+        "Spanish": "iría"
+      },
+      "SecondPersonSingular": {
+        "English": "you would go",
+        "Spanish": "irías"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she would go",
+        "Spanish": "iría"
+      },
+      "FirstPersonPlural": {
+        "English": "we would go",
+        "Spanish": "iríamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they would go",
+        "Spanish": "irían"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Future",
+      "FirstPersonSingular": {
+        "English": "I will go",
+        "Spanish": "iré"
+      },
+      "SecondPersonSingular": {
+        "English": "you will go",
+        "Spanish": "irás"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she will go",
+        "Spanish": "irá"
+      },
+      "FirstPersonPlural": {
+        "English": "we will go",
+        "Spanish": "iremos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they will go",
+        "Spanish": "irán"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Present",
+      "FirstPersonSingular": {
+        "English": "that I go",
+        "Spanish": "vaya"
+      },
+      "SecondPersonSingular": {
+        "English": "that you go",
+        "Spanish": "vayas"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she go",
+        "Spanish": "vaya"
+      },
+      "FirstPersonPlural": {
+        "English": "that we go",
+        "Spanish": "vayamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they go",
+        "Spanish": "vayan"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Perfect",
+      "FirstPersonSingular": {
+        "English": "that I have gone",
+        "Spanish": "haya ido"
+      },
+      "SecondPersonSingular": {
+        "English": "that you have gone",
+        "Spanish": "hayas ido"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she have gone",
+        "Spanish": "haya ido"
+      },
+      "FirstPersonPlural": {
+        "English": "that we have gone",
+        "Spanish": "hayamos ido"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they have gone",
+        "Spanish": "hayan ido"
+      }
+    }
+  ]
+}
+

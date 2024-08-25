@@ -9,10 +9,10 @@ using VerbConjugationTrainer.Models;
 
 public static class ImportManager
 {
-    private static List<string> ActiveTimeForms =
+    private static readonly List<string> ActiveTimeForms =
     [
         "Indicative_Present",
-        "Indicative_Perfect",
+        "Indicative_Past",
         "Indicative_Preterite",
         "Conditional_Present",
         "Indicative_Future",
@@ -25,16 +25,18 @@ public static class ImportManager
         await Task.Delay(1);
 
         var document = new HtmlDocument();
-        document.Load("Source/hacer.html");
+        document.Load($"Source/Html/{verb}.html");
 
         var node = document.DocumentNode.SelectSingleNode("//div[@class='verbtable']");
 
         var conjugations = ParseTables(node, "Indicative")
             .Concat(ParseTables(node, "Subjunctive"))
             .Concat(ParseTables(node, "Conditional"))
-            .Where(x => ActiveTimeForms.Contains(x.TimeForm));
+            .Where(x => ActiveTimeForms.Contains(x.TimeForm))
+            .OrderBy(x => ActiveTimeForms.IndexOf(x.TimeForm))
+            .ToList();
 
-        return new Verb(new(string.Empty, verb), conjugations.ToList());
+        return new Verb(new(string.Empty, verb), conjugations);
     }
 
     private static IEnumerable<Conjugations> ParseTables(HtmlNode node, string form)

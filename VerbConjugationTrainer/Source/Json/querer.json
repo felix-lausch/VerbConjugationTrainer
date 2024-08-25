@@ -1,0 +1,169 @@
+{
+  "RegularForm": {
+    "English": "to want",
+    "Spanish": "querer"
+  },
+  "Conjugations": [
+    {
+      "TimeForm": "Indicative_Present",
+      "FirstPersonSingular": {
+        "English": "I want",
+        "Spanish": "quiero"
+      },
+      "SecondPersonSingular": {
+        "English": "you want",
+        "Spanish": "quieres"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she wants",
+        "Spanish": "quiere"
+      },
+      "FirstPersonPlural": {
+        "English": "we want",
+        "Spanish": "queremos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they want",
+        "Spanish": "quieren"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Past",
+      "FirstPersonSingular": {
+        "English": "I wanted",
+        "Spanish": "quería"
+      },
+      "SecondPersonSingular": {
+        "English": "you wanted",
+        "Spanish": "querías"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she wanted",
+        "Spanish": "quería"
+      },
+      "FirstPersonPlural": {
+        "English": "we wanted",
+        "Spanish": "queríamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they wanted",
+        "Spanish": "querían"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Preterite",
+      "FirstPersonSingular": {
+        "English": "I wanted",
+        "Spanish": "quise"
+      },
+      "SecondPersonSingular": {
+        "English": "you wanted",
+        "Spanish": "quisiste"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she wanted",
+        "Spanish": "quiso"
+      },
+      "FirstPersonPlural": {
+        "English": "we wanted",
+        "Spanish": "quisimos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they wanted",
+        "Spanish": "quisieron"
+      }
+    },
+    {
+      "TimeForm": "Conditional_Present",
+      "FirstPersonSingular": {
+        "English": "I would want",
+        "Spanish": "querría"
+      },
+      "SecondPersonSingular": {
+        "English": "you would want",
+        "Spanish": "querrías"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she would want",
+        "Spanish": "querría"
+      },
+      "FirstPersonPlural": {
+        "English": "we would want",
+        "Spanish": "querr�amos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they would want",
+        "Spanish": "querrían"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Future",
+      "FirstPersonSingular": {
+        "English": "I will want",
+        "Spanish": "querré"
+      },
+      "SecondPersonSingular": {
+        "English": "you will want",
+        "Spanish": "querrás"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she will want",
+        "Spanish": "querrá"
+      },
+      "FirstPersonPlural": {
+        "English": "we will want",
+        "Spanish": "querremos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they will want",
+        "Spanish": "querrán"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Present",
+      "FirstPersonSingular": {
+        "English": "that I want",
+        "Spanish": "quiera"
+      },
+      "SecondPersonSingular": {
+        "English": "that you want",
+        "Spanish": "quieras"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she want",
+        "Spanish": "quiera"
+      },
+      "FirstPersonPlural": {
+        "English": "that we want",
+        "Spanish": "queramos"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they want",
+        "Spanish": "quieran"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Perfect",
+      "FirstPersonSingular": {
+        "English": "that I have wanted",
+        "Spanish": "haya querido"
+      },
+      "SecondPersonSingular": {
+        "English": "that you have wanted",
+        "Spanish": "hayas querido"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she have wanted",
+        "Spanish": "haya querido"
+      },
+      "FirstPersonPlural": {
+        "English": "that we have wanted",
+        "Spanish": "hayamos querido"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they have wanted",
+        "Spanish": "hayan querido"
+      }
+    }
+  ]
+}

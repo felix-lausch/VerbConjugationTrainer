@@ -1,0 +1,169 @@
+{
+  "RegularForm": {
+    "English": "to be (permanent)",
+    "Spanish": "ser"
+  },
+  "Conjugations": [
+    {
+      "TimeForm": "Indicative_Present",
+      "FirstPersonSingular": {
+        "English": "I am",
+        "Spanish": "soy"
+      },
+      "SecondPersonSingular": {
+        "English": "you are",
+        "Spanish": "eres"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she is",
+        "Spanish": "es"
+      },
+      "FirstPersonPlural": {
+        "English": "we are",
+        "Spanish": "somos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they are",
+        "Spanish": "son"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Past",
+      "FirstPersonSingular": {
+        "English": "I was",
+        "Spanish": "era"
+      },
+      "SecondPersonSingular": {
+        "English": "you were",
+        "Spanish": "eras"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she was",
+        "Spanish": "era"
+      },
+      "FirstPersonPlural": {
+        "English": "we were",
+        "Spanish": "éramos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they were",
+        "Spanish": "eran"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Preterite",
+      "FirstPersonSingular": {
+        "English": "I was",
+        "Spanish": "fui"
+      },
+      "SecondPersonSingular": {
+        "English": "you were",
+        "Spanish": "fuiste"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she was",
+        "Spanish": "fue"
+      },
+      "FirstPersonPlural": {
+        "English": "we were",
+        "Spanish": "fuimos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they were",
+        "Spanish": "fueron"
+      }
+    },
+    {
+      "TimeForm": "Conditional_Present",
+      "FirstPersonSingular": {
+        "English": "I would be",
+        "Spanish": "sería"
+      },
+      "SecondPersonSingular": {
+        "English": "you would be",
+        "Spanish": "serías"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she would be",
+        "Spanish": "sería"
+      },
+      "FirstPersonPlural": {
+        "English": "we would be",
+        "Spanish": "seríamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they would be",
+        "Spanish": "serían"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Future",
+      "FirstPersonSingular": {
+        "English": "I will be",
+        "Spanish": "seré"
+      },
+      "SecondPersonSingular": {
+        "English": "you will be",
+        "Spanish": "serás"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she will be",
+        "Spanish": "será"
+      },
+      "FirstPersonPlural": {
+        "English": "we will be",
+        "Spanish": "seremos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they will be",
+        "Spanish": "serán"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Present",
+      "FirstPersonSingular": {
+        "English": "that I be",
+        "Spanish": "sea"
+      },
+      "SecondPersonSingular": {
+        "English": "that you be",
+        "Spanish": "seas"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she be",
+        "Spanish": "sea"
+      },
+      "FirstPersonPlural": {
+        "English": "that we be",
+        "Spanish": "seamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they be",
+        "Spanish": "sean"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Perfect",
+      "FirstPersonSingular": {
+        "English": "that I have been",
+        "Spanish": "haya sido"
+      },
+      "SecondPersonSingular": {
+        "English": "that you have been",
+        "Spanish": "hayas sido"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she has been",
+        "Spanish": "haya sido"
+      },
+      "FirstPersonPlural": {
+        "English": "that we have been",
+        "Spanish": "hayamos sido"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they have been",
+        "Spanish": "hayan sido"
+      }
+    }
+  ]
+}
