@@ -9,13 +9,15 @@ using VerbConjugationTrainer.Models;
 Launch();
 
 var verb = PromptVerb();
+var timeForms = PromptTimeForms(verb);
 
 AnsiConsole.WriteLine("Please type the spanish conjugated verb.");
 
 AnsiConsole.WriteLine();
 AnsiConsole.MarkupLine($"Current Verb: [bold yellow]{verb.RegularForm.Spanish} - {verb.RegularForm.English}[/]");
 
-foreach (var conjugation in verb.Conjugations)
+//TODO: filter out subjunctive perfect or others
+foreach (var conjugation in verb.Conjugations.Where(x => timeForms.Contains(x.TimeForm)))
 {
     AnsiConsole.WriteLine();
     AnsiConsole.MarkupLine($"Current Form: [bold yellow]{conjugation.TimeForm}[/]");
@@ -54,8 +56,22 @@ static Verb PromptVerb()
             .MoreChoicesText("[grey](Move up and down to reveal more options)[/]")
             .AddChoices(Directory.EnumerateFiles("Source/Json").Select(x => Path.GetFileName(x))));
 
-    var verb = JsonSerializer.Deserialize<Verb>(File.ReadAllText($"Source/Json/{fileName}"))!;
-    return verb;
+    return JsonSerializer.Deserialize<Verb>(File.ReadAllText($"Source/Json/{fileName}"))!;
+}
+
+static IEnumerable<string> PromptTimeForms(Verb verb)
+{
+    var choices = verb.Conjugations.Select(x => x.TimeForm).Distinct();
+
+    return AnsiConsole.Prompt(
+        new MultiSelectionPrompt<string>()
+            .Title("Select conjugation forms")
+            .PageSize(10)
+            .MoreChoicesText("[grey](Move up and down to reveal more options)[/]")
+            .InstructionsText(
+                "[grey](Press [blue]<space>[/] to toggle a fruit, " +
+                "[green]<enter>[/] to accept)[/]")
+            .AddChoices(choices));
 }
 
 static void AskQuestion(Translation translation)
@@ -84,6 +100,7 @@ static void AnsiConsoleOverwriteLine(string input)
 static void Exit()
 {
     AnsiConsole.WriteLine();
-    AnsiConsole.Write("Good job :) press any key to exit..");
+    AnsiConsole.WriteLine("Good job :)");
+    AnsiConsole.Write("press any key to exit..");
     Console.ReadKey();
 }
