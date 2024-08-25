@@ -3,19 +3,12 @@ using System.Text.Json;
 using VerbConjugationTrainer;
 using VerbConjugationTrainer.Models;
 
-Console.OutputEncoding = System.Text.Encoding.UTF8;
-
 //var imported = await ImportManager.ParseVerbAsync("querer");
 //var json = JsonSerializer.Serialize(imported);
 
-var fileName = AnsiConsole.Prompt(
-    new SelectionPrompt<string>()
-        .Title("Which [blue]verb[/] to you want to practice?")
-        .PageSize(10)
-        .MoreChoicesText("[grey](Move up and down to reveal more options)[/]")
-        .AddChoices(Directory.EnumerateFiles("Source/Json").Select(x => Path.GetFileName(x))));
+Launch();
 
-var verb = JsonSerializer.Deserialize<Verb>(File.ReadAllText($"Source/Json/{fileName}"))!;
+var verb = PromptVerb();
 
 AnsiConsole.WriteLine("Please type the spanish conjugated verb.");
 
@@ -34,28 +27,50 @@ foreach (var conjugation in verb.Conjugations)
     AskQuestion(conjugation.ThirdPersonPlural);
 }
 
-//var rng = new Random();
-//.OrderBy(_ => rng.Next())
-
 //TODO: dont keep i,you, he, they info in the string itself. find better data structure so that the english sentence can be decided on the fly
 // e.g. that she is, if he is, that he is, etc.
 //TODO: maybe in that structure also keep the spanish word and then show it optionally (yo) soy
 
-AnsiConsole.Write("Good job :) press any key to exit..");
-Console.ReadKey();
+Exit();
+
+static void Launch()
+{
+    Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+    var text = new FigletText("Conjugator")
+        .LeftJustified()
+        .Color(Color.Aqua);
+
+    AnsiConsole.Write(text);
+    AnsiConsole.WriteLine();
+}
+
+static Verb PromptVerb()
+{
+    var fileName = AnsiConsole.Prompt(
+        new SelectionPrompt<string>()
+            .Title("Which [blue]verb[/] to you want to practice?")
+            .PageSize(10)
+            .MoreChoicesText("[grey](Move up and down to reveal more options)[/]")
+            .AddChoices(Directory.EnumerateFiles("Source/Json").Select(x => Path.GetFileName(x))));
+
+    var verb = JsonSerializer.Deserialize<Verb>(File.ReadAllText($"Source/Json/{fileName}"))!;
+    return verb;
+}
 
 static void AskQuestion(Translation translation)
 {
     var question = $"{translation.English}: ";
 
     var answer = AnsiConsole.Ask<string>(question);
+    var solutions = translation.Spanish.Split(",");
 
-    if (answer == translation.Spanish)
+    if (solutions.Contains(answer))
     {
         AnsiConsoleOverwriteLine($"{question}{answer} ✅");
         return;
     }
-    
+
     AnsiConsoleOverwriteLine($"{question}{answer} ❌ => {translation.Spanish}");
     AskQuestion(translation);
 }
@@ -64,4 +79,11 @@ static void AnsiConsoleOverwriteLine(string input)
 {
     AnsiConsole.Cursor.Move(CursorDirection.Up, 1);
     AnsiConsole.WriteLine(input);
+}
+
+static void Exit()
+{
+    AnsiConsole.WriteLine();
+    AnsiConsole.Write("Good job :) press any key to exit..");
+    Console.ReadKey();
 }

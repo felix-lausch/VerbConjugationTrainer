@@ -143,6 +143,29 @@
       }
     },
     {
+      "TimeForm": "Subjunctive_Imperfect",
+      "FirstPersonSingular": {
+        "English": "that I went",
+        "Spanish": "fuera,fuese"
+      },
+      "SecondPersonSingular": {
+        "English": "that you went",
+        "Spanish": "fueras,fueses"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she went",
+        "Spanish": "fuera,fuese"
+      },
+      "FirstPersonPlural": {
+        "English": "that we went",
+        "Spanish": "fuéramos,fuésemos"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they went",
+        "Spanish": "fueran,fuesen"
+      }
+    },
+    {
       "TimeForm": "Subjunctive_Perfect",
       "FirstPersonSingular": {
         "English": "that I have gone",

@@ -89,7 +89,7 @@
       },
       "FirstPersonPlural": {
         "English": "we would want",
-        "Spanish": "querr�amos"
+        "Spanish": "querríamos"
       },
       "ThirdPersonPlural": {
         "English": "they would want",
@@ -140,6 +140,29 @@
       "ThirdPersonPlural": {
         "English": "that they want",
         "Spanish": "quieran"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Imperfect",
+      "FirstPersonSingular": {
+        "English": "that I wanted",
+        "Spanish": "quisiera,quisiese"
+      },
+      "SecondPersonSingular": {
+        "English": "that you wanted",
+        "Spanish": "quisieras,quisieses"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she wanted",
+        "Spanish": "quisiera,quisiese"
+      },
+      "FirstPersonPlural": {
+        "English": "that we wanted",
+        "Spanish": "quisiéramos,quisiésemos"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they wanted",
+        "Spanish": "quisieran,quisiesen"
       }
     },
     {

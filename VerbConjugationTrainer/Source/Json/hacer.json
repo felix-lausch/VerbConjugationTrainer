@@ -143,6 +143,29 @@
       }
     },
     {
+      "TimeForm": "Subjunctive_Imperfect",
+      "FirstPersonSingular": {
+        "English": "that I did",
+        "Spanish": "hiciera,hiciese"
+      },
+      "SecondPersonSingular": {
+        "English": "that you did",
+        "Spanish": "hicieras,hicieses"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she did",
+        "Spanish": "hiciera,hiciese"
+      },
+      "FirstPersonPlural": {
+        "English": "that we did",
+        "Spanish": "hiciéramos,hiciésemos"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they did",
+        "Spanish": "hicieran,hiciesen"
+      }
+    },
+    {
       "TimeForm": "Subjunctive_Perfect",
       "FirstPersonSingular": {
         "English": "that I have done",

@@ -143,6 +143,29 @@
       }
     },
     {
+      "TimeForm": "Subjunctive_Imperfect",
+      "FirstPersonSingular": {
+        "English": "that I was",
+        "Spanish": "fuera,fuese"
+      },
+      "SecondPersonSingular": {
+        "English": "that you were",
+        "Spanish": "fueras,fueses"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she was",
+        "Spanish": "fuera,fuese"
+      },
+      "FirstPersonPlural": {
+        "English": "that we were",
+        "Spanish": "fuéramos,fuésemos"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they were",
+        "Spanish": "fueran,fuesen"
+      }
+    },
+    {
       "TimeForm": "Subjunctive_Perfect",
       "FirstPersonSingular": {
         "English": "that I have been",
