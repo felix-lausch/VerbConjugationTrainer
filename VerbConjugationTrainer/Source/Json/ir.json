@@ -28,29 +28,6 @@
       }
     },
     {
-      "TimeForm": "Indicative_Past",
-      "FirstPersonSingular": {
-        "English": "I went",
-        "Spanish": "iba"
-      },
-      "SecondPersonSingular": {
-        "English": "you went",
-        "Spanish": "ibas"
-      },
-      "ThirdPersonSingular": {
-        "English": "he/she went",
-        "Spanish": "iba"
-      },
-      "FirstPersonPlural": {
-        "English": "we went",
-        "Spanish": "íbamos"
-      },
-      "ThirdPersonPlural": {
-        "English": "they went",
-        "Spanish": "iban"
-      }
-    },
-    {
       "TimeForm": "Indicative_Preterite",
       "FirstPersonSingular": {
         "English": "I went",
@@ -71,6 +48,29 @@
       "ThirdPersonPlural": {
         "English": "they went",
         "Spanish": "fueron"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Imperfect",
+      "FirstPersonSingular": {
+        "English": "I was going",
+        "Spanish": "iba"
+      },
+      "SecondPersonSingular": {
+        "English": "you were going",
+        "Spanish": "ibas"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she was going",
+        "Spanish": "iba"
+      },
+      "FirstPersonPlural": {
+        "English": "we were going",
+        "Spanish": "íbamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they were going",
+        "Spanish": "iban"
       }
     },
     {

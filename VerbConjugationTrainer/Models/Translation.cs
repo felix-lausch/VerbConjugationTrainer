@@ -19,6 +19,35 @@ public record Conjugations(
     Translation SecondPersonSingular,
     Translation ThirdPersonSingular,
     Translation FirstPersonPlural,
-    Translation ThirdPersonPlural);
+    Translation ThirdPersonPlural)
+{
+    public int GetMaxEnglishLength()
+    {
+        string[] eng =
+        [
+            FirstPersonSingular.English,
+            SecondPersonSingular.English,
+            ThirdPersonSingular.English,
+            FirstPersonPlural.English,
+            ThirdPersonPlural.English,
+        ];
+
+        return eng.MaxBy(x => x.Length)?.Length ?? 0;
+    }
+
+    public int GetMaxSpanishLength()
+    {
+        string[] esp =
+        [
+            FirstPersonSingular.Spanish,
+            SecondPersonSingular.Spanish,
+            ThirdPersonSingular.Spanish,
+            FirstPersonPlural.Spanish,
+            ThirdPersonPlural.Spanish,
+        ];
+
+        return esp.MaxBy(x => x.Length)?.Length ?? 0;
+    }
+};
 
 public record Verb(Translation RegularForm, List<Conjugations> Conjugations);

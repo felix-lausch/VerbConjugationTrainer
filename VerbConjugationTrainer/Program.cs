@@ -8,25 +8,10 @@ using VerbConjugationTrainer.Models;
 
 Launch();
 
-var verb = PromptVerb();
-var timeForms = PromptTimeForms(verb);
-
-AnsiConsole.WriteLine("Please type the spanish conjugated verb.");
-
-AnsiConsole.WriteLine();
-AnsiConsole.MarkupLine($"Current Verb: [bold yellow]{verb.RegularForm.Spanish} - {verb.RegularForm.English}[/]");
-
-//TODO: filter out subjunctive perfect or others
-foreach (var conjugation in verb.Conjugations.Where(x => timeForms.Contains(x.TimeForm)))
+var playing = true;
+while (playing)
 {
-    AnsiConsole.WriteLine();
-    AnsiConsole.MarkupLine($"Current Form: [bold yellow]{conjugation.TimeForm}[/]");
-
-    AskQuestion(conjugation.FirstPersonSingular);
-    AskQuestion(conjugation.SecondPersonSingular);
-    AskQuestion(conjugation.ThirdPersonSingular);
-    AskQuestion(conjugation.FirstPersonPlural);
-    AskQuestion(conjugation.ThirdPersonPlural);
+    Play();
 }
 
 //TODO: dont keep i,you, he, they info in the string itself. find better data structure so that the english sentence can be decided on the fly
@@ -47,16 +32,52 @@ static void Launch()
     AnsiConsole.WriteLine();
 }
 
+void Play()
+{
+    var verb = PromptVerb();
+    var timeForms = PromptTimeForms(verb);
+
+    AnsiConsole.WriteLine("Please type the spanish conjugated verb.");
+
+    AnsiConsole.WriteLine();
+    AnsiConsole.MarkupLine($"Current Verb: [bold yellow]{verb.RegularForm.Spanish} - {verb.RegularForm.English}[/]");
+
+    //TODO: filter out subjunctive perfect or others
+    foreach (var conjugation in verb.Conjugations.Where(x => timeForms.Contains(x.TimeForm)))
+    {
+        AnsiConsole.WriteLine();
+        AnsiConsole.MarkupLine($"Current Form: [bold yellow]{conjugation.TimeForm}[/]");
+
+        var enMaxLength = conjugation.GetMaxEnglishLength();
+
+        AskQuestion(conjugation.FirstPersonSingular, enMaxLength);
+        AskQuestion(conjugation.SecondPersonSingular, enMaxLength);
+        AskQuestion(conjugation.ThirdPersonSingular, enMaxLength);
+        AskQuestion(conjugation.FirstPersonPlural, enMaxLength);
+        AskQuestion(conjugation.ThirdPersonPlural, enMaxLength);
+    }
+
+    AnsiConsole.WriteLine();
+
+    playing = AnsiConsole.Prompt(new ConfirmationPrompt("Continue?"));
+    AnsiConsoleOverwriteLine(new string(' ', 100));
+
+    AnsiConsole.WriteLine();
+}
+
 static Verb PromptVerb()
 {
+    var choices = Directory.EnumerateFiles("Source/Json")
+        .Select(x => Path.GetFileNameWithoutExtension(x));
+
     var fileName = AnsiConsole.Prompt(
         new SelectionPrompt<string>()
             .Title("Which [blue]verb[/] to you want to practice?")
             .PageSize(10)
             .MoreChoicesText("[grey](Move up and down to reveal more options)[/]")
-            .AddChoices(Directory.EnumerateFiles("Source/Json").Select(x => Path.GetFileName(x))));
+            .AddChoices(choices));
 
-    return JsonSerializer.Deserialize<Verb>(File.ReadAllText($"Source/Json/{fileName}"))!;
+    return JsonSerializer.Deserialize<Verb>(File.ReadAllText($"Source/Json/{fileName}.json"))!;
 }
 
 static IEnumerable<string> PromptTimeForms(Verb verb)
@@ -69,26 +90,27 @@ static IEnumerable<string> PromptTimeForms(Verb verb)
             .PageSize(10)
             .MoreChoicesText("[grey](Move up and down to reveal more options)[/]")
             .InstructionsText(
-                "[grey](Press [blue]<space>[/] to toggle a fruit, " +
+                "[grey](Press [blue]<space>[/] to select, " +
                 "[green]<enter>[/] to accept)[/]")
             .AddChoices(choices));
 }
 
-static void AskQuestion(Translation translation)
+static void AskQuestion(Translation translation, int maxEnLength)
 {
-    var question = $"{translation.English}: ";
+    var padding = new string(' ', maxEnLength - translation.English.Length);
+    var question = $"{translation.English} {padding}:";
 
-    var answer = AnsiConsole.Ask<string>(question);
+    var answer = AnsiConsole.Ask<string>($"🕳️ {question}");
     var solutions = translation.Spanish.Split(",");
 
     if (solutions.Contains(answer))
     {
-        AnsiConsoleOverwriteLine($"{question}{answer} ✅");
+        AnsiConsoleOverwriteLine($"✅ {question} {answer}");
         return;
     }
 
-    AnsiConsoleOverwriteLine($"{question}{answer} ❌ => {translation.Spanish}");
-    AskQuestion(translation);
+    AnsiConsoleOverwriteLine($"❌ {question} {answer} => {translation.Spanish}");
+    AskQuestion(translation, maxEnLength);
 }
 
 static void AnsiConsoleOverwriteLine(string input)
@@ -99,8 +121,7 @@ static void AnsiConsoleOverwriteLine(string input)
 
 static void Exit()
 {
-    AnsiConsole.WriteLine();
-    AnsiConsole.WriteLine("Good job :)");
+    AnsiConsole.WriteLine("Thank you for playing :)");
     AnsiConsole.Write("press any key to exit..");
     Console.ReadKey();
 }

@@ -28,29 +28,6 @@
       }
     },
     {
-      "TimeForm": "Indicative_Past",
-      "FirstPersonSingular": {
-        "English": "I was",
-        "Spanish": "era"
-      },
-      "SecondPersonSingular": {
-        "English": "you were",
-        "Spanish": "eras"
-      },
-      "ThirdPersonSingular": {
-        "English": "he/she was",
-        "Spanish": "era"
-      },
-      "FirstPersonPlural": {
-        "English": "we were",
-        "Spanish": "éramos"
-      },
-      "ThirdPersonPlural": {
-        "English": "they were",
-        "Spanish": "eran"
-      }
-    },
-    {
       "TimeForm": "Indicative_Preterite",
       "FirstPersonSingular": {
         "English": "I was",
@@ -71,6 +48,29 @@
       "ThirdPersonPlural": {
         "English": "they were",
         "Spanish": "fueron"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Imperfect",
+      "FirstPersonSingular": {
+        "English": "I was being",
+        "Spanish": "era"
+      },
+      "SecondPersonSingular": {
+        "English": "you were being",
+        "Spanish": "eras"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she was being",
+        "Spanish": "era"
+      },
+      "FirstPersonPlural": {
+        "English": "we were being",
+        "Spanish": "éramos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they were being",
+        "Spanish": "eran"
       }
     },
     {

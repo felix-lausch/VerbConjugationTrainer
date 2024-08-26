@@ -28,29 +28,6 @@
       }
     },
     {
-      "TimeForm": "Indicative_Past",
-      "FirstPersonSingular": {
-        "English": "I did",
-        "Spanish": "hacía"
-      },
-      "SecondPersonSingular": {
-        "English": "you did",
-        "Spanish": "hacías"
-      },
-      "ThirdPersonSingular": {
-        "English": "he/she did",
-        "Spanish": "hacía"
-      },
-      "FirstPersonPlural": {
-        "English": "we did",
-        "Spanish": "hacíamos"
-      },
-      "ThirdPersonPlural": {
-        "English": "they did",
-        "Spanish": "hacían"
-      }
-    },
-    {
       "TimeForm": "Indicative_Preterite",
       "FirstPersonSingular": {
         "English": "I did",
@@ -71,6 +48,29 @@
       "ThirdPersonPlural": {
         "English": "they did",
         "Spanish": "hicieron"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Imperfect",
+      "FirstPersonSingular": {
+        "English": "I was doing",
+        "Spanish": "hacía"
+      },
+      "SecondPersonSingular": {
+        "English": "you were doing",
+        "Spanish": "hacías"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she was doing",
+        "Spanish": "hacía"
+      },
+      "FirstPersonPlural": {
+        "English": "we were doing",
+        "Spanish": "hacíamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they were doing",
+        "Spanish": "hacían"
       }
     },
     {
