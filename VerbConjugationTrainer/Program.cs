@@ -61,8 +61,6 @@ void Play()
 
     playing = AnsiConsole.Prompt(new ConfirmationPrompt("Continue?"));
     AnsiConsoleOverwriteLine(new string(' ', 100));
-
-    AnsiConsole.WriteLine();
 }
 
 static Verb PromptVerb()
