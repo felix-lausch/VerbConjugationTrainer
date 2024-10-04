@@ -1,0 +1,6 @@
+@MinimalWebApp_HostAddress = https://localhost:7139
+
+GET {{MinimalWebApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

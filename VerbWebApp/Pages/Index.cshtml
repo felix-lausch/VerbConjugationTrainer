@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+<div id="item-list">
+    @await Html.PartialAsync("_ItemList", Model)
+</div>
+<button hx-get="/Index?handler=MoreItems" hx-target="#item-list" hx-swap="innerHTML">Load More Items</button>
+<button hx-get="/Index?handler=Clear" hx-target="#item-list" hx-swap="innerHTML">Clear</button>
+<button hx-get="/Index?handler=Reset" hx-target="#item-list" hx-swap="innerHTML">Reset</button>

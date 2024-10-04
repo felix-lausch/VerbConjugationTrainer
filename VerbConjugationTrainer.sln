@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35201.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerbConjugationTrainer", "VerbConjugationTrainer\VerbConjugationTrainer.csproj", "{93CD23F1-3E59-46E2-A762-9C1A6BED30AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VerbConjugationTrainer", "VerbConjugationTrainer\VerbConjugationTrainer.csproj", "{93CD23F1-3E59-46E2-A762-9C1A6BED30AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VerbWebApp", "VerbWebApp\VerbWebApp.csproj", "{867CA35B-F828-4C33-B9C3-E39288E8E5D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalWebApp", "MinimalWebApp\MinimalWebApp.csproj", "{C578FD03-1F34-4B35-915B-F1BB4186D79B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{93CD23F1-3E59-46E2-A762-9C1A6BED30AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93CD23F1-3E59-46E2-A762-9C1A6BED30AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93CD23F1-3E59-46E2-A762-9C1A6BED30AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{867CA35B-F828-4C33-B9C3-E39288E8E5D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{867CA35B-F828-4C33-B9C3-E39288E8E5D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{867CA35B-F828-4C33-B9C3-E39288E8E5D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{867CA35B-F828-4C33-B9C3-E39288E8E5D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C578FD03-1F34-4B35-915B-F1BB4186D79B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C578FD03-1F34-4B35-915B-F1BB4186D79B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C578FD03-1F34-4B35-915B-F1BB4186D79B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C578FD03-1F34-4B35-915B-F1BB4186D79B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
