@@ -2,44 +2,28 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Vibin</title>
     <script src="https://unpkg.com/htmx.org@1.6.1"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <div id="hello-header">
         <h1>Hello World!</h1>
+        <p>Die folgenden Texte stehen zur Auswahl:</p>
     </div>
     <div id="item-list">
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
+        {{items}}
     </div>
+    <br/>
     <button hx-get="/list" hx-target="#item-list" hx-swap="innerHTML">Click me</button>
     <br/>
     <form
-          hx-post="/name"
+        hx-post="/name"
         hx-target="#hello-header"
         hx-swap="innerHTML">
 
         <input name="hello-input" id="hello-input" type="text" placeholder="Name" />
         <button type="submit">Update Name</button>
     </form>
-    <!--<input id="hello-input" type="text" placeholder="Name" />
-    <script>
-        const inputField = document.getElementById("hello-input");
-        const header = document.getElementById("hello-header");
-
-        inputField.addEventListener("keyup", (event) => {
-            event.preventDefault()
-
-            if (event.code === "Enter") {
-                header.textContent = `Hello ${inputField.value}`
-            }
-        })
-    </script>-->
-    <!--<script>swal("Hello world!");</script>-->
 </body>
 </html>

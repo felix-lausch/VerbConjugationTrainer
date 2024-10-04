@@ -1,6 +1,11 @@
-@MinimalWebApp_HostAddress = https://localhost:7139
+@env = https://localhost:7139
 
-GET {{MinimalWebApp_HostAddress}}/weatherforecast/
-Accept: application/json
+GET {{env}}/
+Accept: text/html
+
+###
+
+GET {{env}}/easyspanish_34_esp
+Accept: text/html
 
 ###
