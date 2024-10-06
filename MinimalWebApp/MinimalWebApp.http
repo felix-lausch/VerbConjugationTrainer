@@ -9,3 +9,13 @@ GET {{env}}/easyspanish_34_esp
 Accept: text/html
 
 ###
+
+POST {{env}}/game
+Accept: application/json
+
+###
+
+GET {{env}}/game/121736c2-326b-46f4-b561-7d6358895312
+Accept: text/html
+
+###

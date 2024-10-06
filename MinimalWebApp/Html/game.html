@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Vibin</title>
+    <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+    <style>
+        input.horizontal-shaking {
+            animation: horizontal-shaking 0.25s;
+        }
+
+        @keyframes horizontal-shaking {
+            0% { transform: translateX(0) }
+            25% { transform: translateX(5px) }
+            50% { transform: translateX(-5px) }
+            75% { transform: translateX(5px) }
+            100% { transform: translateX(0) }
+        }
+    </style>
+</head>
+<body>
+    <div class="horizontal-shaking" id="hello-header">
+        <h1>Game Time!</h1>
+    </div>
+    <div id="game-info" hx-post="/game" hx-target="this" hx-swap="outerHTML" hx-trigger="load"/>
+    <script>
+        document.addEventListener('htmx:afterRequest', function (evt) {
+            const wordInput = document.getElementById("word")
+            wordInput.selectionStart = wordInput.selectionEnd = wordInput.value.length;
+        });
+    </script>
+</body>
+</html>

@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <title>Vibin</title>
     <script src="https://unpkg.com/htmx.org@1.6.1"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <div id="hello-header">
@@ -15,15 +14,9 @@
         {{items}}
     </div>
     <br/>
-    <button hx-get="/list" hx-target="#item-list" hx-swap="innerHTML">Click me</button>
     <br/>
-    <form
-        hx-post="/name"
-        hx-target="#hello-header"
-        hx-swap="innerHTML">
-
-        <input name="hello-input" id="hello-input" type="text" placeholder="Name" />
-        <button type="submit">Update Name</button>
-    </form>
+    <div hx-target="this" hx-swap="outerHTML" hx-get="/contact/1" hx-trigger="load">
+    </div>
+    <br/>
 </body>
 </html>
