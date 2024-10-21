@@ -1,0 +1,192 @@
+{
+  "RegularForm": {
+    "English": "to call",
+    "Spanish": "llamar"
+  },
+  "Conjugations": [
+    {
+      "TimeForm": "Indicative_Present",
+      "FirstPersonSingular": {
+        "English": "I call",
+        "Spanish": "llamo"
+      },
+      "SecondPersonSingular": {
+        "English": "you call",
+        "Spanish": "llamas"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she calls",
+        "Spanish": "llama"
+      },
+      "FirstPersonPlural": {
+        "English": "we call",
+        "Spanish": "llamamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they call",
+        "Spanish": "llaman"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Preterite",
+      "FirstPersonSingular": {
+        "English": "I called",
+        "Spanish": "llamé"
+      },
+      "SecondPersonSingular": {
+        "English": "you called",
+        "Spanish": "llamaste"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she called",
+        "Spanish": "llamó"
+      },
+      "FirstPersonPlural": {
+        "English": "we called",
+        "Spanish": "llamamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they called",
+        "Spanish": "llamaron"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Imperfect",
+      "FirstPersonSingular": {
+        "English": "I was calling",
+        "Spanish": "llamaba"
+      },
+      "SecondPersonSingular": {
+        "English": "you were calling",
+        "Spanish": "llamabas"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she was calling",
+        "Spanish": "llamaba"
+      },
+      "FirstPersonPlural": {
+        "English": "we were calling",
+        "Spanish": "llamábamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they were calling",
+        "Spanish": "llamaban"
+      }
+    },
+    {
+      "TimeForm": "Conditional_Present",
+      "FirstPersonSingular": {
+        "English": "I would call",
+        "Spanish": "llamaría"
+      },
+      "SecondPersonSingular": {
+        "English": "you would call",
+        "Spanish": "llamarías"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she would call",
+        "Spanish": "llamaría"
+      },
+      "FirstPersonPlural": {
+        "English": "we would call",
+        "Spanish": "llamaríamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they would call",
+        "Spanish": "llamarían"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Future",
+      "FirstPersonSingular": {
+        "English": "I will call",
+        "Spanish": "llamaré"
+      },
+      "SecondPersonSingular": {
+        "English": "you will call",
+        "Spanish": "llamarás"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she will call",
+        "Spanish": "llamará"
+      },
+      "FirstPersonPlural": {
+        "English": "we will call",
+        "Spanish": "llamaremos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they will call",
+        "Spanish": "llamarán"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Present",
+      "FirstPersonSingular": {
+        "English": "that I call",
+        "Spanish": "llame"
+      },
+      "SecondPersonSingular": {
+        "English": "that you call",
+        "Spanish": "llames"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she call",
+        "Spanish": "llame"
+      },
+      "FirstPersonPlural": {
+        "English": "that we call",
+        "Spanish": "llamemos"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they call",
+        "Spanish": "llamen"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Imperfect",
+      "FirstPersonSingular": {
+        "English": "that I called",
+        "Spanish": "llamara, llamase"
+      },
+      "SecondPersonSingular": {
+        "English": "that you called",
+        "Spanish": "llamaras, llamases"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she called",
+        "Spanish": "llamara, llamase"
+      },
+      "FirstPersonPlural": {
+        "English": "that we called",
+        "Spanish": "llamáramos, llamásemos"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they called",
+        "Spanish": "llamaran, llamasen"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Perfect",
+      "FirstPersonSingular": {
+        "English": "that I have called",
+        "Spanish": "haya llamado"
+      },
+      "SecondPersonSingular": {
+        "English": "that you have called",
+        "Spanish": "hayas llamado"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she have called",
+        "Spanish": "haya llamado"
+      },
+      "FirstPersonPlural": {
+        "English": "that we have called",
+        "Spanish": "hayamos llamado"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they have called",
+        "Spanish": "hayan llamado"
+      }
+    }
+  ]
+}

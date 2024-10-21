@@ -1,10 +1,7 @@
 ﻿using Spectre.Console;
+using System.Text;
 using System.Text.Json;
-using VerbConjugationTrainer;
 using VerbConjugationTrainer.Models;
-
-//var imported = await ImportManager.ParseVerbAsync("querer");
-//var json = JsonSerializer.Serialize(imported);
 
 Launch();
 
@@ -16,13 +13,14 @@ while (playing)
 
 //TODO: dont keep i,you, he, they info in the string itself. find better data structure so that the english sentence can be decided on the fly
 // e.g. that she is, if he is, that he is, etc.
-//TODO: maybe in that structure also keep the spanish word and then show it optionally (yo) soy
+
+//TODO: make spanish pronoun an option => (yo) soy
 
 Exit();
 
 static void Launch()
 {
-    Console.OutputEncoding = System.Text.Encoding.UTF8;
+    Console.OutputEncoding = Encoding.UTF8;
 
     var text = new FigletText("Conjugator")
         .LeftJustified()
@@ -75,7 +73,7 @@ static Verb PromptVerb()
             .MoreChoicesText("[grey](Move up and down to reveal more options)[/]")
             .AddChoices(choices));
 
-    return JsonSerializer.Deserialize<Verb>(File.ReadAllText($"Source/Json/{fileName}.json"))!;
+    return JsonSerializer.Deserialize<Verb>(File.ReadAllText($"Source/Json/{fileName}.json", Encoding.UTF8))!;
 }
 
 static IEnumerable<string> PromptTimeForms(Verb verb)
@@ -93,10 +91,15 @@ static IEnumerable<string> PromptTimeForms(Verb verb)
             .AddChoices(choices));
 }
 
-static void AskQuestion(Translation translation, int maxEnLength)
+static void AskQuestion(Translation? translation, int maxEnLength)
 {
+    if (translation is null)
+    {
+        return;
+    }
+
     var padding = new string(' ', maxEnLength - translation.English.Length);
-    var question = $"{translation.English} {padding}:";
+    var question = $"{translation.English} {padding}: {translation.PronounSpanish}";
 
     var answer = AnsiConsole.Ask<string>($"🕳️ {question}");
     var solutions = translation.Spanish.Split(",");

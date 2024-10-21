@@ -1,0 +1,192 @@
+{
+  "RegularForm": {
+    "English": "to arrive",
+    "Spanish": "llegar"
+  },
+  "Conjugations": [
+    {
+      "TimeForm": "Indicative_Present",
+      "FirstPersonSingular": {
+        "English": "I arrive",
+        "Spanish": "llego"
+      },
+      "SecondPersonSingular": {
+        "English": "you arrive",
+        "Spanish": "llegas"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she arrives",
+        "Spanish": "llega"
+      },
+      "FirstPersonPlural": {
+        "English": "we arrive",
+        "Spanish": "llegamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they arrive",
+        "Spanish": "llegan"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Preterite",
+      "FirstPersonSingular": {
+        "English": "I arrived",
+        "Spanish": "llegué"
+      },
+      "SecondPersonSingular": {
+        "English": "you arrived",
+        "Spanish": "llegaste"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she arrived",
+        "Spanish": "llegó"
+      },
+      "FirstPersonPlural": {
+        "English": "we arrived",
+        "Spanish": "llegamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they arrived",
+        "Spanish": "llegaron"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Imperfect",
+      "FirstPersonSingular": {
+        "English": "I was arriving",
+        "Spanish": "llegaba"
+      },
+      "SecondPersonSingular": {
+        "English": "you were arriving",
+        "Spanish": "llegabas"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she was arriving",
+        "Spanish": "llegaba"
+      },
+      "FirstPersonPlural": {
+        "English": "we were arriving",
+        "Spanish": "llegábamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they were arriving",
+        "Spanish": "llegaban"
+      }
+    },
+    {
+      "TimeForm": "Conditional_Present",
+      "FirstPersonSingular": {
+        "English": "I would arrive",
+        "Spanish": "llegaría"
+      },
+      "SecondPersonSingular": {
+        "English": "you would arrive",
+        "Spanish": "llegarías"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she would arrive",
+        "Spanish": "llegaría"
+      },
+      "FirstPersonPlural": {
+        "English": "we would arrive",
+        "Spanish": "llegaríamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they would arrive",
+        "Spanish": "llegarían"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Future",
+      "FirstPersonSingular": {
+        "English": "I will arrive",
+        "Spanish": "llegaré"
+      },
+      "SecondPersonSingular": {
+        "English": "you will arrive",
+        "Spanish": "llegarás"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she will arrive",
+        "Spanish": "llegará"
+      },
+      "FirstPersonPlural": {
+        "English": "we will arrive",
+        "Spanish": "llegaremos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they will arrive",
+        "Spanish": "llegarán"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Present",
+      "FirstPersonSingular": {
+        "English": "that I arrive",
+        "Spanish": "llegue"
+      },
+      "SecondPersonSingular": {
+        "English": "that you arrive",
+        "Spanish": "llegues"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she arrives",
+        "Spanish": "llegue"
+      },
+      "FirstPersonPlural": {
+        "English": "that we arrive",
+        "Spanish": "lleguemos"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they arrive",
+        "Spanish": "lleguen"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Imperfect",
+      "FirstPersonSingular": {
+        "English": "that I arrived",
+        "Spanish": "llegara, llegase"
+      },
+      "SecondPersonSingular": {
+        "English": "that you arrived",
+        "Spanish": "llegaras, llegases"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she arrived",
+        "Spanish": "llegara, llegase"
+      },
+      "FirstPersonPlural": {
+        "English": "that we arrived",
+        "Spanish": "llegáramos, llegásemos"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they arrived",
+        "Spanish": "llegaran, llegasen"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Perfect",
+      "FirstPersonSingular": {
+        "English": "that I have arrived",
+        "Spanish": "haya llegado"
+      },
+      "SecondPersonSingular": {
+        "English": "that you have arrived",
+        "Spanish": "hayas llegado"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she has arrived",
+        "Spanish": "haya llegado"
+      },
+      "FirstPersonPlural": {
+        "English": "that we have arrived",
+        "Spanish": "hayamos llegado"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they have arrived",
+        "Spanish": "hayan llegado"
+      }
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "RegularForm": {
+    "English": "to carry, to take, to wear",
+    "Spanish": "llevar"
+  },
+  "Conjugations": [
+    {
+      "TimeForm": "Indicative_Present",
+      "FirstPersonSingular": {
+        "English": "I carry/take/wear",
+        "Spanish": "llevo"
+      },
+      "SecondPersonSingular": {
+        "English": "you carry/take/wear",
+        "Spanish": "llevas"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she carries/takes/wears",
+        "Spanish": "lleva"
+      },
+      "FirstPersonPlural": {
+        "English": "we carry/take/wear",
+        "Spanish": "llevamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they carry/take/wear",
+        "Spanish": "llevan"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Preterite",
+      "FirstPersonSingular": {
+        "English": "I carried/took/wore",
+        "Spanish": "llevé"
+      },
+      "SecondPersonSingular": {
+        "English": "you carried/took/wore",
+        "Spanish": "llevaste"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she carried/took/wore",
+        "Spanish": "llevó"
+      },
+      "FirstPersonPlural": {
+        "English": "we carried/took/wore",
+        "Spanish": "llevamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they carried/took/wore",
+        "Spanish": "llevaron"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Imperfect",
+      "FirstPersonSingular": {
+        "English": "I was carrying/taking/wearing",
+        "Spanish": "llevaba"
+      },
+      "SecondPersonSingular": {
+        "English": "you were carrying/taking/wearing",
+        "Spanish": "llevabas"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she was carrying/taking/wearing",
+        "Spanish": "llevaba"
+      },
+      "FirstPersonPlural": {
+        "English": "we were carrying/taking/wearing",
+        "Spanish": "llevábamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they were carrying/taking/wearing",
+        "Spanish": "llevaban"
+      }
+    },
+    {
+      "TimeForm": "Conditional_Present",
+      "FirstPersonSingular": {
+        "English": "I would carry/take/wear",
+        "Spanish": "llevaría"
+      },
+      "SecondPersonSingular": {
+        "English": "you would carry/take/wear",
+        "Spanish": "llevarías"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she would carry/take/wear",
+        "Spanish": "llevaría"
+      },
+      "FirstPersonPlural": {
+        "English": "we would carry/take/wear",
+        "Spanish": "llevaríamos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they would carry/take/wear",
+        "Spanish": "llevarían"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Future",
+      "FirstPersonSingular": {
+        "English": "I will carry/take/wear",
+        "Spanish": "llevaré"
+      },
+      "SecondPersonSingular": {
+        "English": "you will carry/take/wear",
+        "Spanish": "llevarás"
+      },
+      "ThirdPersonSingular": {
+        "English": "he/she will carry/take/wear",
+        "Spanish": "llevará"
+      },
+      "FirstPersonPlural": {
+        "English": "we will carry/take/wear",
+        "Spanish": "llevaremos"
+      },
+      "ThirdPersonPlural": {
+        "English": "they will carry/take/wear",
+        "Spanish": "llevarán"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Present",
+      "FirstPersonSingular": {
+        "English": "that I carry/take/wear",
+        "Spanish": "lleve"
+      },
+      "SecondPersonSingular": {
+        "English": "that you carry/take/wear",
+        "Spanish": "lleves"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she carry/take/wear",
+        "Spanish": "lleve"
+      },
+      "FirstPersonPlural": {
+        "English": "that we carry/take/wear",
+        "Spanish": "llevemos"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they carry/take/wear",
+        "Spanish": "lleven"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Imperfect",
+      "FirstPersonSingular": {
+        "English": "that I carried/took/wore",
+        "Spanish": "llevara, llevase"
+      },
+      "SecondPersonSingular": {
+        "English": "that you carried/took/wore",
+        "Spanish": "llevaras, llevases"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she carried/took/wore",
+        "Spanish": "llevara, llevase"
+      },
+      "FirstPersonPlural": {
+        "English": "that we carried/took/wore",
+        "Spanish": "lleváramos, llevásemos"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they carried/took/wore",
+        "Spanish": "llevaran, llevasen"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Perfect",
+      "FirstPersonSingular": {
+        "English": "that I have carried/taken/worn",
+        "Spanish": "haya llevado"
+      },
+      "SecondPersonSingular": {
+        "English": "that you have carried/taken/worn",
+        "Spanish": "hayas llevado"
+      },
+      "ThirdPersonSingular": {
+        "English": "that he/she has carried/taken/worn",
+        "Spanish": "haya llevado"
+      },
+      "FirstPersonPlural": {
+        "English": "that we have carried/taken/worn",
+        "Spanish": "hayamos llevado"
+      },
+      "ThirdPersonPlural": {
+        "English": "that they have carried/taken/worn",
+        "Spanish": "hayan llevado"
+      }
+    }
+  ]
+}

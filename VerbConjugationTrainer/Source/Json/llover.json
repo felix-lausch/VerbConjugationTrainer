@@ -1,0 +1,64 @@
+{
+  "RegularForm": {
+    "English": "to rain",
+    "Spanish": "llover"
+  },
+  "Conjugations": [
+    {
+      "TimeForm": "Indicative_Present",
+      "ThirdPersonSingular": {
+        "English": "it rains",
+        "Spanish": "llueve"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Preterite",
+      "ThirdPersonSingular": {
+        "English": "it rained",
+        "Spanish": "llovió"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Imperfect",
+      "ThirdPersonSingular": {
+        "English": "it was raining",
+        "Spanish": "llovía"
+      }
+    },
+    {
+      "TimeForm": "Conditional_Present",
+      "ThirdPersonSingular": {
+        "English": "it would rain",
+        "Spanish": "llovería"
+      }
+    },
+    {
+      "TimeForm": "Indicative_Future",
+      "ThirdPersonSingular": {
+        "English": "it will rain",
+        "Spanish": "lloverá"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Present",
+      "ThirdPersonSingular": {
+        "English": "that it rains",
+        "Spanish": "llueva"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Imperfect",
+      "ThirdPersonSingular": {
+        "English": "that it rained",
+        "Spanish": "lloviera, lloviese"
+      }
+    },
+    {
+      "TimeForm": "Subjunctive_Perfect",
+      "ThirdPersonSingular": {
+        "English": "that it has rained",
+        "Spanish": "haya llovido"
+      }
+    }
+  ]
+}

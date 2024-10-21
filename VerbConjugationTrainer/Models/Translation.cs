@@ -1,6 +1,6 @@
 ﻿namespace VerbConjugationTrainer.Models;
 
-public record Translation(string English, string Spanish);
+public record Translation(string English, string Spanish, string PronounSpanish);
 
 public enum TimeForm
 {
@@ -13,40 +13,47 @@ public enum TimeForm
     Subjunctive_Imperfect,
 }
 
-public record Conjugations(
-    string TimeForm,
-    Translation FirstPersonSingular,
-    Translation SecondPersonSingular,
-    Translation ThirdPersonSingular,
-    Translation FirstPersonPlural,
-    Translation ThirdPersonPlural)
+public class Conjugations(
+    string timeForm,
+    Translation? firstPersonSingular,
+    Translation? secondPersonSingular,
+    Translation? thirdPersonSingular,
+    Translation? firstPersonPlural,
+    Translation? thirdPersonPlural)
 {
+    public string TimeForm => timeForm;
+    public Translation? FirstPersonSingular => firstPersonSingular is null ? null : firstPersonSingular with { PronounSpanish = "yo" };
+    public Translation? SecondPersonSingular => secondPersonSingular is null ? null : secondPersonSingular with { PronounSpanish = "tu" };
+    public Translation? ThirdPersonSingular => thirdPersonSingular is null ? null : thirdPersonSingular with { PronounSpanish = "el/ella" };
+    public Translation? FirstPersonPlural => firstPersonPlural is null ? null : firstPersonPlural with { PronounSpanish = "nosotros" };
+    public Translation? ThirdPersonPlural => thirdPersonPlural is null ? null : thirdPersonPlural with { PronounSpanish = "ustedes" };
+
     public int GetMaxEnglishLength()
     {
-        string[] eng =
+        string?[] eng =
         [
-            FirstPersonSingular.English,
-            SecondPersonSingular.English,
-            ThirdPersonSingular.English,
-            FirstPersonPlural.English,
-            ThirdPersonPlural.English,
+            firstPersonSingular?.English,
+            secondPersonSingular?.English,
+            thirdPersonSingular?.English,
+            firstPersonPlural?.English,
+            thirdPersonPlural?.English,
         ];
 
-        return eng.MaxBy(x => x.Length)?.Length ?? 0;
+        return eng.MaxBy(x => x?.Length)?.Length ?? 0;
     }
 
     public int GetMaxSpanishLength()
     {
-        string[] esp =
+        string?[] esp =
         [
-            FirstPersonSingular.Spanish,
-            SecondPersonSingular.Spanish,
-            ThirdPersonSingular.Spanish,
-            FirstPersonPlural.Spanish,
-            ThirdPersonPlural.Spanish,
+            firstPersonSingular?.Spanish,
+            secondPersonSingular?.Spanish,
+            thirdPersonSingular?.Spanish,
+            firstPersonPlural?.Spanish,
+            thirdPersonPlural?.Spanish,
         ];
 
-        return esp.MaxBy(x => x.Length)?.Length ?? 0;
+        return esp.MaxBy(x => x?.Length)?.Length ?? 0;
     }
 };
 

@@ -36,7 +36,7 @@ public static class ImportManager
             .OrderBy(x => ActiveTimeForms.IndexOf(x.TimeForm))
             .ToList();
 
-        return new Verb(new(string.Empty, verb), conjugations);
+        return new Verb(new(string.Empty, verb, string.Empty), conjugations);
     }
 
     private static IEnumerable<Conjugations> ParseTables(HtmlNode node, string form)
@@ -59,7 +59,7 @@ public static class ImportManager
             var secondColumn = row.SelectSingleNode(".//td[2]");
             if (secondColumn != null)
             {
-                translations.Add(new Translation(string.Empty, secondColumn.InnerText));
+                translations.Add(new Translation(string.Empty, secondColumn.InnerText, string.Empty));
             }
         }
 
