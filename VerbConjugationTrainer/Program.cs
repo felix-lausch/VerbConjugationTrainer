@@ -8,7 +8,7 @@ Launch();
 var playing = true;
 while (playing)
 {
-    Play();
+    playing = Play();
 }
 
 //TODO: dont keep i,you, he, they info in the string itself. find better data structure so that the english sentence can be decided on the fly
@@ -30,7 +30,7 @@ static void Launch()
     AnsiConsole.WriteLine();
 }
 
-void Play()
+bool Play()
 {
     var verb = PromptVerb();
     var timeForms = PromptTimeForms(verb);
@@ -57,8 +57,10 @@ void Play()
 
     AnsiConsole.WriteLine();
 
-    playing = AnsiConsole.Prompt(new ConfirmationPrompt("Continue?"));
+    var playing = AnsiConsole.Prompt(new ConfirmationPrompt("Continue?"));
     AnsiConsoleOverwriteLine(new string(' ', 100));
+
+    return playing;
 }
 
 static Verb PromptVerb()
@@ -78,7 +80,18 @@ static Verb PromptVerb()
 
 static IEnumerable<string> PromptTimeForms(Verb verb)
 {
-    var choices = verb.Conjugations.Select(x => x.TimeForm).Distinct();
+    var allowedChoices = new string[]
+    {
+        "Indicative_Present",
+        "Indicative_Preterite",
+        "Indicative_Imperfect",
+        "Indicative_Future"
+    };
+
+    var choices = verb.Conjugations
+        .Select(x => x.TimeForm)
+        .Where(x => allowedChoices.Contains(x))
+        .Distinct();
 
     return AnsiConsole.Prompt(
         new MultiSelectionPrompt<string>()
